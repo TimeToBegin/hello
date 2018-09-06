@@ -83,8 +83,17 @@ input {
     font-size: 1.5rem;
   }
 }
+.invite-banner {
+  width: 375px;
+  height: 4.56rem;
+  margin: 0 auto;
+  background: #E4E4E4;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .invite {
-  min-width: 3.75rem;
   margin: 0 auto;
   background: #f9f9f9;
   font-size: 0.12rem;
@@ -104,11 +113,6 @@ input {
 .invite .invite-edit {
   position: absolute;
   top: -.5rem;
-}
-.invite .invite-banner {
-  width: 100%;
-  height: 4.56rem;
-  background: #E4E4E4;
 }
 .invite .invite-1 {
   padding: .2rem;
@@ -189,4 +193,15 @@ input {
 }
 .invite .invite-operate p {
   color: #D37158;
+}
+
+@media screen and (max-width: 960px) {
+  .invite {
+    width: 100%;
+    max-width: none;
+  }
+
+  .invite-banner {
+    width: 100%;
+  }
 }

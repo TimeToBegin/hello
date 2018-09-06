@@ -16,8 +16,22 @@ input{outline: none;}
 @media (min-width:640px){body{font-size:1rem;}}
 @media (min-width:960px){body{font-size:1.2rem;}}
 @media (min-width:1200px){body{font-size:1.5rem;}}
+body{
+    
+}
+
+.invite-banner{
+            width: 375px;
+            height: 4.56rem;
+            margin: 0 auto;
+            background: #E4E4E4;
+                background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+        }
     .invite{
-        min-width: 3.75rem;
+//      min-width: 3.75rem;
         margin: 0 auto;
         background: rgba(249,249,249,1);
         font-size:0.12rem;
@@ -38,11 +52,7 @@ input{outline: none;}
             top: -.5rem;
            
         }
-        .invite-banner{
-            width: 100%;
-            height: 4.56rem;
-            background: #E4E4E4;
-        }
+        
         .invite-1{
             padding: .2rem;
             width: 100%;
@@ -125,3 +135,11 @@ input{outline: none;}
         }
     }
 
+@media screen and (max-width:960px){
+     .invite{
+         width: 100%;
+         max-width: none;
+     }
+     .invite-banner{
+            width: 100%;}
+}

@@ -17,16 +17,21 @@ input{outline: none;}
 @media (min-width:960px){body{font-size:1.2rem;}}
 @media (min-width:1200px){body{font-size:1.5rem;}}
     .invite{
-        // width: 3.75rem;
+        min-width: 3.75rem;
         margin: 0 auto;
         background: rgba(249,249,249,1);
         font-size:0.12rem;
         padding-bottom: .5rem;
+        max-width: 960px;
+        .invite-con{
+            width: 90%;
+            margin: 0 auto;
+        }
         .invite-edit-wap{
             position: relative;
             height: 1.6rem;
             margin: 0 auto;
-            width: 3.35rem;
+            width:100%;
         }
         .invite-edit{
             position: absolute;
@@ -40,7 +45,7 @@ input{outline: none;}
         }
         .invite-1{
             padding: .2rem;
-            width: 3.35rem;
+            width: 100%;
             box-sizing: border-box;
             margin: 0 auto;
             background: #fff;

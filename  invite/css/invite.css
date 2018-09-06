@@ -195,7 +195,17 @@ input {
   color: #D37158;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 640px) {
+  .invite {
+    width: 100%;
+    max-width: none;
+  }
+
+  .invite-banner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
   .invite {
     width: 100%;
     max-width: none;

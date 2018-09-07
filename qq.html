@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min.js"></script>
+    <title>Document</title>
+    <style>
+               body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1200px;
+            height: 510px;
+			border-radius: 2px;
+        }
+         .swiper-slide img{
+         	width: 100%;
+         	height: 100%;
+         	border-radius: 2px;
+         }
+         .swiper-slide a{
+         	display: block;
+         	top: 0;
+         	left: 0;
+         	position: absolute;
+         	width: 100%;
+         	height: 100%;
+         	z-index: 10;
+         }
+ .swiper-slide-active{
+ 	position: relative;
+ }
+.swiper-slide-active:after{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	content: '';
+	display: block;
+     box-shadow: 0 7px 22px rgba(14, 21, 47, 0.3);
+     -webkit-transition: all .3s ease 0s;
+     -ms-transition: all .3s ease 0s;
+     -o-transition: all .3s ease 0s;
+     transition: all .3s ease 0s;
+   
+ }
+.swiper-container-3d .swiper-slide-shadow-left{
+	border-radius: 2px;
+}
+.swiper-slide-prev{
+	position: relative;
+}
+.swiper-slide-prev:after{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	content: '';
+	display: block;
+	/*background: #007AFF;*/
+	z-index: 100;
+}
+.slideImg{
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+}
+ .swiper-button {
+     position: absolute;
+     top: 40%;
+     width: 60px;
+     height: 60px;
+     background: rgba(0, 0, 0, 0.6);
+     color: #fff;
+     text-align: center;
+     border-radius: 50%;
+     overflow: hidden;
+     opacity: 0;
+     -webkit-transition: all 0.3s ease 0s;
+     -ms-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+     margin-top: 0;
+ }
+ .swiper-pagination-bullet {
+     background: rgba(0, 0, 0, 0.6);
+     border: 1px solid transparent;
+     width: 6px;
+     height: 6px;
+     box-sizing: border-box;
+ }
+ .swiper-pagination-bullet-active{
+ 	background: #fff;
+     border: 1px solid #fff;
+ }
+ .swiper-container-horizontal>.swiper-pagination-bullets{
+ 	    bottom: 65px;
+ }
+
+
+ 
+.swiper-button-prev.swiper-button:hover {
+     opacity: 1 !important;
+ }
+ 
+.swiper-button-next.swiper-button:hover {
+     opacity: 1 !important;
+ }
+ .swiper-container:hover .swiper-button {
+     opacity: .6 !important;
+ }
+
+.swiper-container:hover .swiper-slide-active:after{	
+     box-shadow: 0 7px 32px rgba(14, 21, 47, 0.4)
+ }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+		       <a class="swiper-slide atvImg" href="http://baidu.com" target="_blank">
+		        <div class='slideImg'>
+		        <img src='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'>
+		        <div class='atvImg-layer' data-img='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'></div>
+		        </div>
+		        </a> 
+		         <a class="swiper-slide atvImg" href="http://baidu.com" target="_blank">
+		        <div class='slideImg'>
+		        <img src='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'>
+		        <div class='atvImg-layer' data-img='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'></div>
+		        </div>
+		        </a> 
+		        
+		         <a class="swiper-slide atvImg" href="http://baidu.com" target="_blank">
+		        <div class='slideImg'>
+		        <img src='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'>
+		        <div class='atvImg-layer' data-img='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'></div>
+		        </div>
+		        </a> 
+		        
+		         <a class="swiper-slide atvImg" href="http://baidu.com" target="_blank">
+		        <div class='slideImg'>
+		        <img src='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'>
+		        <div class='atvImg-layer' data-img='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'></div>
+		        </div>
+		        </a> 
+		        
+		         <a class="swiper-slide atvImg" href="http://baidu.com" target="_blank">
+		        <div class='slideImg'>
+		        <img src='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'>
+		        <div class='atvImg-layer' data-img='http://s2.dgtle.com/portal/201809/06/163322k72rx6u4daz6u9vx.jpg'></div>
+		        </div>
+		        </a> 
+		        
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+         <!-- 如果需要分页器 -->
+			<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+			<!-- 如果需要导航按钮 -->
+			<div class="swiper-button-prev swiper-button" style="left: 365px;" >
+				<span class="Dgtle-fonts icon-Dgtlex-dgtlexicon-chevron-left"></span>
+			</div>
+			<div class="swiper-button-next swiper-button" style="right: 365px; >
+				<span class="Dgtle-fonts icon-Dgtlex-dgtlexicon-chevron-right"></span>
+			</div>
+			
+    </div>
+
+</body>
+
+<script>
+   var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow', //3D效果
+        direction: "horizontal",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        spaceBetween: 90,  // 轮播间距
+        loop: true, //让Swiper看起来是循环的
+		<!--autoplay: true, //自动切换的时间间隔-->
+		speed: 500,
+//		grabCursor: true, //设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状
+		paginationType: 'bullets', //圆点
+		paginationClickable: true, //此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 40, //决定了 左右两边的高度, 值越大,左右两边高度越小
+            modifier: 3,
+            slideShadows: true
+        },
+        
+        navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        
+    });
+    	$('#newBannerSwiper .swiper-button-prev').css('left', (document.body.clientWidth - 1200) / 2 + 20);
+	$('#newBannerSwiper .swiper-button-next').css('right', (document.body.clientWidth - 1200) / 2 +20);
+
+</script>
+
+</html>
